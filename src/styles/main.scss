@@ -1,0 +1,68 @@
+.font-headers {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.font-content {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+}
+
+html {
+  @extend .font-content;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, h4 {
+  @extend .font-headers;
+}
+
+
+body {
+  //display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  //display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  //display: -ms-flexbox;      /* TWEENER - IE 10 */
+  //display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  #layout {
+    width: 800px;
+  }
+}
+
+.example {
+  display: flex;
+  .example__input {
+    flex: 1;
+    button {
+      padding:10px;
+    }
+  }
+  .example__output {
+    flex: 1;
+  }
+}
+
+.post {
+  margin: 2em 0;
+  .post__text {
+  }
+
+  .post__tags {
+    @extend .font-headers;
+    display: flex;
+    margin: 0 -3px;
+    .post__tag {
+      background-color: lightgrey;
+      margin: 0 3px;
+      padding: 3px 5px;
+      text-transform: uppercase;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
