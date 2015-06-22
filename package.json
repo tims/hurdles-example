@@ -39,7 +39,7 @@
     "baconjs": "^0.7.59",
     "chance": "^0.7.5",
     "font-awesome": "^4.3.0",
-    "hurdles": "0.0.2",
+    "hurdles": "0.0.4",
     "jquery": "^2.1.4",
     "lodash": "^3.9.2",
     "moment": "^2.10.3",
